@@ -7,9 +7,12 @@ export const Hero = () => {
     <section className="relative min-h-[80vh] bg-gradient-subtle overflow-hidden">
       {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-15"
         style={{ backgroundImage: `url(${heroImage})` }}
       />
+      
+      {/* Overlay for better text contrast */}
+      <div className="absolute inset-0 bg-white/40 backdrop-blur-[1px]" />
       
       {/* Content */}
       <div className="relative container mx-auto px-6 py-20">
