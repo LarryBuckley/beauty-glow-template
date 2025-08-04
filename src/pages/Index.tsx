@@ -1,19 +1,17 @@
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { BookingPolicies } from "@/components/BookingPolicies";
-import { AppointmentPrep } from "@/components/AppointmentPrep";
-import { ClientReviews } from "@/components/ClientReviews";
-import { ThankYouSection } from "@/components/ThankYouSection";
+import { Services } from "@/components/Services";
+import { BookingCalendar } from "@/components/BookingCalendar";
+import { ThankYou } from "@/components/ThankYou";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-starry">
+    <div className="min-h-screen bg-background">
       <Header />
       <Hero />
-      <BookingPolicies />
-      <AppointmentPrep />
-      <ClientReviews />
-      <ThankYouSection />
+      <Services />
+      <BookingCalendar />
+      <ThankYou />
     </div>
   );
 };

@@ -8,59 +8,52 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Glamorous dark theme palette */
-    --background: 240 15% 8%;
-    --foreground: 320 40% 90%;
+    /* Beauty-focused color palette */
+    --background: 0 0% 99%;
+    --foreground: 25 10% 15%;
 
-    --card: 240 12% 12%;
-    --card-foreground: 320 40% 90%;
+    --card: 0 0% 100%;
+    --card-foreground: 25 10% 15%;
 
-    --popover: 240 12% 12%;
-    --popover-foreground: 320 40% 90%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 25 10% 15%;
 
-    /* Hot pink primary */
-    --primary: 320 70% 65%;
+    /* Rose gold primary */
+    --primary: 15 35% 75%;
     --primary-foreground: 0 0% 100%;
 
-    /* Rose gold secondary */
-    --secondary: 15 45% 70%;
-    --secondary-foreground: 240 15% 8%;
+    /* Soft nude secondary */
+    --secondary: 25 15% 92%;
+    --secondary-foreground: 25 10% 25%;
 
-    /* Dark muted */
-    --muted: 240 8% 20%;
-    --muted-foreground: 320 20% 70%;
+    /* Light blush muted */
+    --muted: 15 20% 95%;
+    --muted-foreground: 25 8% 55%;
 
-    /* Bright pink accent */
-    --accent: 310 80% 75%;
-    --accent-foreground: 240 15% 8%;
+    /* Soft pink accent */
+    --accent: 340 30% 88%;
+    --accent-foreground: 25 10% 25%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 240 15% 25%;
-    --input: 240 12% 18%;
-    --ring: 320 70% 65%;
+    --border: 15 15% 90%;
+    --input: 15 15% 92%;
+    --ring: 15 35% 75%;
 
-    /* Custom glamour tokens */
-    --beauty-rose: 320 70% 65%;
-    --beauty-gold: 45 85% 75%;
-    --beauty-pink: 310 80% 75%;
-    --beauty-dark: 240 15% 8%;
-    --beauty-card: 240 12% 12%;
+    /* Custom beauty tokens */
+    --beauty-rose: 15 35% 75%;
+    --beauty-blush: 340 30% 88%;
+    --beauty-nude: 25 15% 85%;
+    --beauty-cream: 30 20% 96%;
     
     /* Gradients */
-    --gradient-beauty: linear-gradient(135deg, hsl(var(--beauty-rose)), hsl(var(--beauty-pink)));
-    --gradient-gold: linear-gradient(135deg, hsl(var(--beauty-gold)), hsl(var(--beauty-rose)));
-    --gradient-subtle: linear-gradient(180deg, hsl(var(--beauty-dark)), hsl(var(--background)));
-    --gradient-starry: radial-gradient(circle at 25% 25%, hsl(320 70% 65% / 0.1) 0%, transparent 50%), 
-                       radial-gradient(circle at 75% 75%, hsl(310 80% 75% / 0.1) 0%, transparent 50%),
-                       radial-gradient(circle at 50% 50%, hsl(45 85% 75% / 0.05) 0%, transparent 50%),
-                       hsl(var(--background));
+    --gradient-beauty: linear-gradient(135deg, hsl(var(--beauty-rose)), hsl(var(--beauty-blush)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--beauty-cream)), hsl(var(--background)));
     
     /* Shadows */
-    --shadow-beauty: 0 15px 50px -15px hsl(var(--beauty-rose) / 0.4);
-    --shadow-gold: 0 10px 40px -10px hsl(var(--beauty-gold) / 0.3);
-    --shadow-elegant: 0 8px 30px -8px hsl(var(--beauty-pink) / 0.25);
+    --shadow-beauty: 0 10px 40px -15px hsl(var(--beauty-rose) / 0.3);
+    --shadow-elegant: 0 4px 20px -8px hsl(var(--beauty-blush) / 0.25);
 
     --radius: 0.5rem;
 
@@ -126,30 +119,6 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-gradient-starry text-foreground;
-    background-attachment: fixed;
-  }
-  
-  /* Sparkle animations */
-  @keyframes sparkle {
-    0%, 100% { opacity: 0; transform: scale(0.8); }
-    50% { opacity: 1; transform: scale(1.2); }
-  }
-  
-  @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-  }
-  
-  .sparkle {
-    animation: sparkle 2s ease-in-out infinite;
-  }
-  
-  .sparkle-delayed {
-    animation: sparkle 2s ease-in-out infinite 0.5s;
-  }
-  
-  .float-animation {
-    animation: float 3s ease-in-out infinite;
+    @apply bg-background text-foreground;
   }
 }
