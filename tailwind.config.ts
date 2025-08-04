@@ -52,12 +52,13 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Beauty-specific colors
+				// Glamour-specific colors
 				beauty: {
 					rose: 'hsl(var(--beauty-rose))',
-					blush: 'hsl(var(--beauty-blush))',
-					nude: 'hsl(var(--beauty-nude))',
-					cream: 'hsl(var(--beauty-cream))'
+					gold: 'hsl(var(--beauty-gold))',
+					pink: 'hsl(var(--beauty-pink))',
+					dark: 'hsl(var(--beauty-dark))',
+					card: 'hsl(var(--beauty-card))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
@@ -73,13 +74,17 @@ export default {
 			fontFamily: {
 				'playfair': ['Playfair Display', 'serif'],
 				'inter': ['Inter', 'sans-serif'],
+				'script': ['Dancing Script', 'cursive'],
 			},
 			backgroundImage: {
 				'gradient-beauty': 'var(--gradient-beauty)',
+				'gradient-gold': 'var(--gradient-gold)',
 				'gradient-subtle': 'var(--gradient-subtle)',
+				'gradient-starry': 'var(--gradient-starry)',
 			},
 			boxShadow: {
 				'beauty': 'var(--shadow-beauty)',
+				'gold': 'var(--shadow-gold)',
 				'elegant': 'var(--shadow-elegant)',
 			},
 			borderRadius: {
